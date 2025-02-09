@@ -1,0 +1,173 @@
+@import '~@angular/material/theming';
+@include mat-core();
+$my-app-primary: mat-palette($mat-blue);
+$my-app-accent:  mat-palette($mat-blue);
+$my-app-warn:    mat-palette($mat-blue);
+$my-app-theme: mat-dark-theme((
+    color: (
+        primary: $my-app-primary,
+        accent: $my-app-accent,
+        warn: $my-app-warn,
+    )
+));
+
+@include angular-material-theme($my-app-theme);
+
+.Sidebar
+{
+    background: #000027;
+}
+
+.Toolbar
+{
+    background: #1c3ea1;
+    color: #97f4dd;
+    text-shadow: 0 0 1.4em rgb(255, 0, 155), 0 0 0.9em  rgb(255, 0, 255)
+}
+
+.ClosedCardsContainer
+{
+    background: radial-gradient(closest-side, rgba(19,46,126,1), rgba(255,0,0,0));
+}
+
+.mat-card
+{
+    background: #132e7e;
+    color: #ffffffcc;
+    text-shadow: #000 0.0em 0.0em 0.9em;
+}
+
+.FlexItem
+{
+    background: #0e2464;
+}
+
+.CardContent
+{
+    background: #000027;
+}
+
+.CardTitle
+{
+    text-shadow: #0f0 0.0em 0.0em 0.9em, #0f0 0.0em 0.0em 0.9em, #fff 0.0em 0.0em 0.9em;
+}
+
+.mat-header-row
+{
+    background: #132e7e;
+    text-shadow: #0f0 0.0em 0.0em 0.9em, #0f0 0.0em 0.0em 0.9em, #fff 0.0em 0.0em 0.9em;
+}
+
+.mat-row
+{
+    background: #000027;
+    text-shadow: #000 0.0em 0.0em 0.9em;
+}
+.mat-row.hovered
+{
+    background: #0e2464;
+}
+.mat-row.highlighted
+{
+    background: #132e7e;
+}
+
+.mat-paginator
+{
+    background: #000027;
+}
+
+.mat-raised-button
+{
+    background: #132e7e;
+    color: #eff0ff;
+    text-shadow: #0f0 0.0em 0.0em 0.9em;
+}
+
+.Button
+{
+    background: rgb(7, 27, 88);
+    color: #eff0ff;
+    text-shadow: #0f0 0.0em 0.0em 0.9em;
+}
+
+.ScrollArea {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(53, 53, 53) #1f64e0;
+}
+.ScrollArea::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+.ScrollArea::-webkit-scrollbar-track {
+    background: rgb(53, 53, 53);
+}
+.ScrollArea::-webkit-scrollbar-thumb {
+    background-color: #1f64e0;
+    border-radius: 10px;
+    border: 2px solid rgb(18, 70, 116);
+}
+
+.InactiveState
+{
+    font-weight: bold;
+    color: rgb(219, 121, 109);
+}
+.ActiveState
+{
+    font-weight: bold;
+    color: rgb(138, 231, 206);
+}
+.StreamingState
+{
+    font-weight: bold;
+    color: #0fb;
+}
+
+.mat-expansion-panel
+{
+    background: #222;
+}
+.mat-expansion-panel-header
+{
+    background: #333;
+}
+
+.TitleText
+{
+    color: #ff0;
+}
+.NormalText
+{
+    color: #bbb;
+}
+
+.AccentedText
+{
+    color: rgb(98, 185, 144);
+    text-shadow: #0f0 0.0em 0.0em 0.3em;
+}
+
+.GreenGlow
+{
+    text-shadow: #0f0 0.0em 0.0em 0.4em, #0f0 0.0em 0.0em 0.9em;
+}
+
+mat-select-trigger
+{
+    color: #ccc;
+}
+
+.Map
+{
+    border: 1px #1f64e0 solid;
+}
+.MapElement
+{
+    border: 1px #1f64e0 solid;
+}
+
+.WelcomeMessage
+{
+    background: #4c85f0;
+}
